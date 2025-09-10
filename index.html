@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trekit - Trilha sem Nome</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="trekit-logo.png" alt="Trekit logo" class="logo-img" />
+        <span class="brand-text">Trekit</span>
+      </div>
+      <nav class="main-nav">
+        <a href="#">Explorar</a>
+        <a href="#">Minhas trilhas</a>
+        <a href="#">Sobre</a>
+      </nav>
+      <a class="btn-login" href="#">Entrar</a>
+    </div>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main class="container main-content">
+    <div class="grid">
+      <!-- Coluna esquerda -->
+      <section class="content">
+        <!-- Card Trilha -->
+        <article class="trail-card">
+          <img src="https://picsum.photos/1600/600" alt="Trilha sem Nome" class="trail-img">
+          <div class="trail-body">
+            <h1 class="trail-title">Trilha sem Nome</h1>
+            <p class="trail-rating">⭐⭐⭐⭐☆ <span class="count">(120 avaliações)</span></p>
+            <div class="trail-info">
+              <span><b>Localização:</b> SC</span>
+              <span><b>Duração:</b> 3h</span>
+              <span><b>Dificuldade:</b> Média</span>
+            </div>
+            <p class="trail-desc">Uma bela caminhada em meio à natureza, com vistas incríveis do litoral e acesso fácil.</p>
+            <div class="trail-actions">
+              <button class="btn-outline">Salvar</button>
+              <button class="btn-outline">Compartilhar</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Mapa -->
+        <section class="map-card">
+          <h2 class="section-title">Mapa</h2>
+          <div class="map-box">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.529172248456!2d-48.6163!3d-27.6793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8c9d0e46f0f4b%3A0x123456789abcdef!2sPraia%20do%20Silveira%2C%20Garopaba%20-%20SC!5e0!3m2!1spt-BR!2sbr!4v1693669472000!5m2!1spt-BR!2sbr"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          <p class="map-caption">📍 Localização da trilha no Google Maps.</p>
+        </section>
+
+        <!-- Comentários -->
+        <section class="comments">
+          <h2 class="section-title">Comentários</h2>
+
+          <!-- Formulário -->
+          <div class="comment-form">
+            <textarea placeholder="Escreva um comentário..."></textarea>
+            <button class="btn-green">Publicar</button>
+          </div>
+
+          <!-- Comentário -->
+          <article class="comment">
+            <div class="comment-header">
+              <img src="https://i.pravatar.cc/50" alt="user" class="avatar">
+              <div>
+                <strong>João da Silva</strong> <span class="time">· há 2 dias</span>
+              </div>
+            </div>
+            <p>Adorei a trilha, super recomendo! 🌿</p>
+            <div class="comment-gallery">
+              <img src="https://picsum.photos/300/180?random=3" alt="">
+              <img src="https://picsum.photos/300/180?random=4" alt="">
+            </div>
+            <button class="btn-outline small">👍 Curtir</button>
+          </article>
+        </section>
+      </section>
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <h2 class="section-title">Outras Trilhas</h2>
+        <div class="trail-list">
+          <a href="#" class="trail-item">
+            <img src="https://picsum.photos/150/90?random=10" alt="">
+            <span>Trilha da Serra</span>
+          </a>
+          <a href="#" class="trail-item">
+            <img src="https://picsum.photos/150/90?random=11" alt="">
+            <span>Trilha da Lagoa</span>
+          </a>
+          <a href="#" class="trail-item">
+            <img src="https://picsum.photos/150/90?random=12" alt="">
+            <span>Trilha do Mirante</span>
+          </a>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="site-footer">
+    <p>© 2025 Trekit — Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>

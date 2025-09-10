@@ -1,0 +1,276 @@
+:root {
+  font-size: 62.5%; /* 1rem = 10px */
+  --green: #2e7d32;
+  --light: #f9fafb;
+  --gray: #666;
+  --shadow: 0 0.2rem 0.6rem rgba(0,0,0,0.1);
+}
+
+/* Fonte personalizada */
+@font-face {
+  font-family: "Vremena Grotesk";
+  src: url("VremenaGrotesk.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Vremena Grotesk";
+  src: url("VremenaGrotesk-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Vremena Grotesk";
+  src: url("VremenaGrotesk-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
+body {
+  font-family: "Vremena Grotesk", sans-serif;
+  font-size: 1.6rem;
+  background: var(--light);
+  color: #111;
+  margin: 0;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+/* Header */
+.site-header {
+  background: #fff;
+  box-shadow: var(--shadow);
+  padding: 1.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.logo-img {
+  height: 3.2rem;
+}
+.brand-text {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.main-nav {
+  display: flex;
+  gap: 2rem;
+}
+.main-nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.6rem;
+}
+.btn-login {
+  background: var(--green);
+  color: #fff;
+  padding: 0.8rem 1.6rem;
+  border-radius: 0.8rem;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+/* Layout */
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4rem;
+}
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Trail Card */
+.trail-card {
+  background: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.trail-img {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+}
+.trail-body {
+  padding: 2rem;
+}
+.trail-title {
+  font-size: 2.4rem;
+  margin: 0 0 1rem;
+}
+.trail-rating {
+  font-size: 1.6rem;
+  color: #fbc02d;
+}
+.trail-info {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.4rem;
+  margin: 1rem 0;
+}
+.trail-desc {
+  font-size: 1.6rem;
+  margin: 1rem 0 2rem;
+}
+.trail-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Botões */
+.btn-outline {
+  border: 0.1rem solid var(--green);
+  background: transparent;
+  padding: 0.8rem 1.6rem;
+  border-radius: 0.6rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.btn-green {
+  background: var(--green);
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 0.6rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.small {
+  font-size: 1.2rem;
+  padding: 0.4rem 1rem;
+}
+
+/* Mapa */
+.map-card {
+  margin: 4rem 0;
+}
+.map-box {
+  position: relative;
+  height: 40rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.map-box iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: 0;
+}
+.map-caption {
+  font-size: 1.4rem;
+  color: var(--gray);
+  margin-top: 1rem;
+}
+
+/* Comentários */
+.comments {
+  margin: 4rem 0;
+}
+.comment-form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+  margin-bottom: 2rem;
+}
+.comment-form textarea {
+  width: 100%;
+  height: 8rem;
+  resize: none;
+  padding: 1rem;
+  font-size: 1.4rem;
+  border: 0.1rem solid #ddd;
+  border-radius: 0.6rem;
+  margin-bottom: 1rem;
+}
+.comment {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+  margin-bottom: 2rem;
+}
+.comment-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.avatar {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+.time {
+  color: var(--gray);
+  font-size: 1.2rem;
+}
+.comment-gallery {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.comment-gallery img {
+  width: 20rem;
+  height: 12rem;
+  object-fit: cover;
+  border-radius: 0.6rem;
+}
+
+/* Sidebar */
+.sidebar {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+  height: fit-content;
+}
+.trail-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.trail-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.6rem;
+}
+.trail-item img {
+  width: 8rem;
+  height: 6rem;
+  object-fit: cover;
+  border-radius: 0.6rem;
+}
+
+/* Footer */
+.site-footer {
+  background: #fff;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 4rem;
+  border-top: 0.1rem solid #eee;
+  font-size: 1.4rem;
+  color: var(--gray);
+}
