@@ -1,12 +1,12 @@
 :root {
-  font-size: 62.5%; /* 1rem = 10px */
+  font-size: 62.5%; 
   --green: #2e7d32;
   --light: #f9fafb;
   --gray: #666;
   --shadow: 0 0.2rem 0.6rem rgba(0,0,0,0.1);
 }
 
-/* Fonte personalizada */
+
 @font-face {
   font-family: "Vremena Grotesk";
   src: url("VremenaGrotesk.woff2") format("woff2");
@@ -34,14 +34,14 @@ body {
   margin: 0;
 }
 
-/* Container */
+
 .container {
   width: 90%;
   max-width: 120rem;
   margin: 0 auto;
 }
 
-/* Header */
+
 .site-header {
   background: #fff;
   box-shadow: var(--shadow);
@@ -85,7 +85,7 @@ body {
   font-size: 1.6rem;
 }
 
-/* Layout */
+
 .grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -97,7 +97,7 @@ body {
   }
 }
 
-/* Trail Card */
+
 .trail-card {
   background: #fff;
   border-radius: 1rem;
@@ -135,7 +135,7 @@ body {
   gap: 1rem;
 }
 
-/* Botões */
+
 .btn-outline {
   border: 0.1rem solid var(--green);
   background: transparent;
@@ -158,7 +158,7 @@ body {
   padding: 0.4rem 1rem;
 }
 
-/* Mapa */
+
 .map-card {
   margin: 4rem 0;
 }
@@ -181,7 +181,7 @@ body {
   margin-top: 1rem;
 }
 
-/* Comentários */
+
 .comments {
   margin: 4rem 0;
 }
@@ -236,7 +236,6 @@ body {
   border-radius: 0.6rem;
 }
 
-/* Sidebar */
 .sidebar {
   background: #fff;
   padding: 2rem;
@@ -264,7 +263,6 @@ body {
   border-radius: 0.6rem;
 }
 
-/* Footer */
 .site-footer {
   background: #fff;
   text-align: center;
@@ -274,3 +272,4 @@ body {
   font-size: 1.4rem;
   color: var(--gray);
 }
+
